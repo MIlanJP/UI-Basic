@@ -88,13 +88,17 @@ list.forEach(user =>{
      Object.values(user).forEach( text=>{
          let rowdata=document.createElement('td');
          let textInSideTD=document.createTextNode(text);
-         rowdata.className="user-row";
+         rowdata.className="user-row-data";
          if(count===0){
              let iconForUser=document.createElement('img');
              iconForUser.className="icon-for-user";
              iconForUser.src='img/user.png';
              rowdata.appendChild(iconForUser);
          }
+         if(count===2){
+            rowdata.className='status-column';
+         }
+
          count++;
          rowdata.appendChild(textInSideTD);
          row.appendChild(rowdata)

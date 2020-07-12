@@ -7,24 +7,26 @@ body{
     rgb(229, 255, 0),rgb(14, 175, 187),yellow,rgb(22, 163, 40),rgb(0, 255, 234),
     rgb(229, 255, 0),rgb(14, 175, 187),yellow); */
 
-    background-color: rgb(140, 153, 151);
-    font-size: 10px;
+    background-color:linear-gradient(white,rgb(99, 131, 99));
 }
 
-.v{
-    font-size:30px;
-    padding: 20px;
+.vh{
+    width:12%;
+    height:800px;
+    background-color:black;
 }
+
 a{
-    text-align: center;
+    
     display: block;
-    background-color:orange;
+    background-color:gray;
     margin-bottom: 2px;
     margin-right:0px;
-    width:10%;
+    width:100%;
+    height:50px
     font-family: Tahoma ;
-    font-size:10%;
-    padding: 1px;
+    font-size:20px;
+    padding: 2px;
     text-decoration: none;
     text-shadow: aliceblue;
     color: rgb(97, 92, 78);
@@ -37,18 +39,19 @@ font-stretch: extra-condensed;
     background-color:rgb(137, 208, 255);
     background-image: linear-gradient(rgb(251, 255, 0),rgb(255, 0, 212));
     background-clip: content-box;
-    width:12%;
-    padding:20px;
-    font-size: 250%;
+    width:110%;
+    padding:0px;
+    font-size: 110%;
     color:rgb(3, 3, 3);
     font-family: MV Boli ;
 }
+
 
 #table-for-user{
     display: inline-block;
     margin-top:0%;
     left: 13%;
-    top: 200px;
+    top: 100px;
     position: absolute;
     margin-right:10px;
 }
@@ -66,8 +69,9 @@ th{
     padding-right: 100px;
 }
 
-.user-row{
-    font-size: 20px;
+.user-row-data{
+    font-size: 15px;
+    padding: 8px;
     border: 3px solid rgb(255, 197, 197);
     border-radius: 5px;
 }
@@ -80,5 +84,14 @@ th{
 .icon-for-user{
     float:left;
     width:10%;
-    height:5%;
+    height:3%;
+}
+
+.status-column{
+    border:3px solid greenyellow;
+    text-align: center;
+    padding: 0px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(0, 247, 255);
 }
