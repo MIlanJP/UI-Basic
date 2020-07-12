@@ -11,7 +11,7 @@ const list=[
         email:'ChristinaWoods@company.com',
         Status:'Active',
         Role:'User',
-        LastLogin:2,
+        LastLogin:'2 Days ago',
         Permission:'Invalid'
     },
 
@@ -20,7 +20,7 @@ const list=[
         email:'JoshyaFox@company.com',
         Status:'Active',
         Role:'Admin',
-        LastLogin:3,
+        LastLogin:"3 Days ago",
         Permission:'Valid'
     },
 
@@ -29,7 +29,7 @@ const list=[
         email:'KatherineWhite@company.com',
         Status:'Active',
         Role:'Admin',
-        LastLogin:3,
+        LastLogin:'3 Days ago',
         Permission:'Invalid'
     },
 
@@ -39,7 +39,7 @@ const list=[
         email:'MaryCarlson@company.com',
         Status:'Inactive',
         Role:'Admin',
-        LastLogin:1,
+        LastLogin:'1 Days ago',
         Permission:'valid'
     },
 
@@ -48,7 +48,7 @@ const list=[
         email:'Nicolelarsonn@company.com',
         Status:'Inactive',
         Role:'User',
-        LastLogin:1,
+        LastLogin:'1 Days ago',
         Permission:'valid'
     },
 
@@ -57,7 +57,7 @@ const list=[
         email:'RaymondPatter@company.com',
         Status:'Inactive',
         Role:'User',
-        LastLogin:2,
+        LastLogin:'2 Days ago',
         Permission:'valid'
     }
 ]
@@ -75,7 +75,6 @@ Tableheader.forEach(headerText=>{
     let header=document.createElement('th');
     header.className="user-display-header";
     let text=document.createTextNode(headerText);
-    console.log(headerText);
     header.appendChild(text);
     tableHeaderForUser.appendChild(header);
 })
@@ -85,11 +84,18 @@ var t=document.getElementById('table-for-user').appendChild(tableForUser);
 
 list.forEach(user =>{
     let row=document.createElement('tr');
+    let count=0;
      Object.values(user).forEach( text=>{
-         console.log(Object.keys(user))
          let rowdata=document.createElement('td');
-         rowdata.className="user-row";
          let textInSideTD=document.createTextNode(text);
+         rowdata.className="user-row";
+         if(count===0){
+             let iconForUser=document.createElement('img');
+             iconForUser.className="icon-for-user";
+             iconForUser.src='img/user.png';
+             rowdata.appendChild(iconForUser);
+         }
+         count++;
          rowdata.appendChild(textInSideTD);
          row.appendChild(rowdata)
      } )
