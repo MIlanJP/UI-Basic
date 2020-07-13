@@ -39,8 +39,8 @@ const list=[
         email:'MaryCarlson@company.com',
         Status:'Inactive',
         Role:'Admin',
-        LastLogin:'1 Days ago',
-        Permission:'valid'
+        LastLogin:'1 Day ago',
+        Permission:'Valid'
     },
 
     {
@@ -48,8 +48,8 @@ const list=[
         email:'Nicolelarsonn@company.com',
         Status:'Active',
         Role:'User',
-        LastLogin:'1 Days ago',
-        Permission:'valid'
+        LastLogin:'1 Day ago',
+        Permission:'Valid'
     },
 
     {
@@ -58,7 +58,7 @@ const list=[
         Status:'Inactive',
         Role:'User',
         LastLogin:'2 Days ago',
-        Permission:'valid'
+        Permission:'Valid'
     },
 
     {
@@ -67,7 +67,7 @@ const list=[
         Status:'Active',
         Role:'User',
         LastLogin:'2 Days ago',
-        Permission:'valid'
+        Permission:'Valid'
     }
 ]
 
