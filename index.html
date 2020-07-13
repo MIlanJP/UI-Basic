@@ -5,20 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>UI For List</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
 <body>
     <div class="vh">
+        <h3 class='name-of-cuddle'>Cuddle Admin</h3>
+        <div class="verical-nav-bar">
      <a class="v" href="#"><small><img class="navbar-icon" src="img/money-transfer.png" alt=""> Transaction</small></a>
      <a class="v" href="#"><small> <img  class="navbar-icon" src="img/gear.png" alt="">  System Settings</small></a>
      <a class="v" href="#"><small> <img class="navbar-icon"  src="img/question-mark.png" alt="">  Suggested Questions</small></a>
-     <a class="v" href="#"><small> <img class="navbar-icon"  src="img/lock.png" alt=""> Authorization</small></a>
+     <a class="v" href="#"><small> <img class="navbar-icon"  src="img/caps-lock.png" alt=""> Authorization</small></a>
      <a class="v" href="#"><small>Users</small></a>
      <a class="v" href="#"><small>Groups</small></a>
      <a class="v" href="#"><small>Permission</small></a>
     </div>
-    <div id="table-for-user" ></div>
+    </div>
+    <h3 class='list-headings' >Users(20)</h3>
+    <div id="table-for-user" >
+    </div>
+    <form action="">
+<input class="ask"  type="text" placeholder="What do you want to ask ? " >
+<input type="submit" name="Ask" id="Ask" value="Ask" >
+</form>
 
+<form action="">
+    <input class="search" type="text" placeholder="Search UserName Email Role Status">
+    <button type="submit" name="Ask" id="submitbutton"><i class="fa fa-search"></i></button>
+</form>
     <script src="app.js"></script>
 </body>
 </html>
