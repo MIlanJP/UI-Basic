@@ -6,27 +6,29 @@
         <title>UI For List</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style2.css">
     </head>
 
 <body>
+    
+<div class="side-vertical-bar" >
     <div class="vh">
         <h3 class='name-of-cuddle'>Cuddle Admin</h3>
         <div class="verical-nav-bar">
      <a class="v" href="#"><small><img class="navbar-icon" src="img/money-transfer.png" alt=""> Transaction</small></a>
      <a class="v" href="#"><small> <img  class="navbar-icon" src="img/gear.png" alt="">  System Settings</small></a>
      <a class="v" href="#"><small> <img class="navbar-icon"  src="img/question-mark.png" alt="">  Suggested Questions</small></a>
-     <a class="v" href="#"><small> <img class="navbar-icon"  src="img/caps-lock.png" alt=""> Authorization</small></a>
-     <div>
-        <a class="drop--down-auth" href="#"><small>Users</small></a>
-        <a class="drop--down-auth" href="#"><small>Groups</small></a>
-        <a class="drop--down-auth" href="#"><small>Permission</small></a>
-     </div>
+     <button class="v vertical-nav-auth-dropdown " onclick="authclick"><small> <img class="navbar-icon"  src="img/caps-lock.png" alt=""> Authorization</small></button>
+     <div class="auth-drop-down"  id="vertical-nav-dropdown-auth-block" >
+        <a class="drpdwn" href="#">Users</a>
+        <a  class="drpdwn"  href="#" >Groups</a>
+        <a  class="drpdwn"  href="#">Permissions</a>
+    </div>
  
     </div>
     </div>
     <h3 class='user-headings' >Hey</h3>
-    <div id="table-for-user" >
-    </div>
+
     <form action="">
 <input class="ask"  type="text" placeholder="What do you want to ask ? " >
 <input type="submit" name="Ask" id="Ask" value="Ask" >
@@ -44,16 +46,17 @@
 ></div>
 
 
-<div class="side-vertical-bar" >
 
 </div>
 
 <div class="table-block">
-
+    <div id="table-for-user" >
+    </div>
 </div>
 
 
     <script src="app.js"></script>
+    <script src="app2.js" ></script>
 </body>
 
 </html>
