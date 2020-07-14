@@ -1,0 +1,7 @@
+#flex-container {
+    display: flex;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+}

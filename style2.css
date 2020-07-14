@@ -76,3 +76,25 @@ text-align: left;
 .search-button{
     display:flex;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+#flex-container {
+    position: relative;
+    display: flex;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.rowdata1{
+   flex:1 1 auto;
+
+}
