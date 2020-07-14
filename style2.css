@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+.side-vertical-nav-bar{
+    font-family: Roboto;
+    position: fixed;
+    display:flex;
+    flex-direction:column;
+}
+
+.side-vertical-nav-bar a{
+    text-decoration: none;
+    margin-bottom: 13px;
+
+}
+
+.drop-down-button-auth{
+    width:100px;
+    height:30px;
+}
+/* .vertical-nav-auth-dropdown{
+    display:none;
+    background-color:black;
+} */
+
+.side-nav-icons{
+    width: 20px;
+}
+
+#vertical-nav-dropdown-auth-block{
+    display:none;
+}
+
+#vertical-nav-dropdown-auth-display{
+    display:flex;
+    flex-direction:column;
+}
