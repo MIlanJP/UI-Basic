@@ -60,7 +60,6 @@
 #vertical-nav-dropdown-auth-display a:hover {
     background-color:rgb(137, 208, 255);
     background-image: linear-gradient(rgb(251, 255, 0),rgb(255, 0, 212));
-
     width:95%;
     height: 150%;
     padding:10px;
@@ -73,3 +72,7 @@
 .vertical-nav-auth-dropdown  {
 text-align: left;
 } 
+
+.search-button{
+    display:flex;
+}

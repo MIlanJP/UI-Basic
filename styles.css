@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 body{
    
@@ -18,11 +19,12 @@ body{
     background-color:rgb(68, 60, 60);
     border:1px solid gray;
     border-top-left-radius: 15px;
+    min-width: 228px;
 }
 
+
 .v{ 
-    display:flex;
-    flex-direction:column;
+ 
     margin-bottom: 2px;
     margin-right:0px;
     width:95%;
@@ -79,12 +81,14 @@ font-stretch: extra-condensed;
     color:rgb(3, 3, 3);
     font-family: MV Boli ;
 }
-@media  screen  (min-width:500px){
 .vertical-nav-bar{
     display:flex;
+    flex-direction:column;
+    min-width: 200px;
+    z-index:1;
   
 }
-}
+
 
 .row{
     box-shadow: 1px 1px 1px 1px rgb(146, 134, 134);
@@ -94,10 +98,17 @@ font-stretch: extra-condensed;
     color:white;
 }
 
-#table-for-user{
-   
+/* .user-display-header{
+
+}
+
+.table-block{
     display: flex;
-    /* flex-direction: row;     */
+    justify-content: flex-start;
+} */
+
+#table-for-user{
+
     margin-top:0%;
     left: 18%;
     top: 167px;
@@ -114,23 +125,21 @@ font-stretch: extra-condensed;
     font-size:13px;
     text-align: left;
     font-family: "Segoe UI",Arial,sans-serif;
-}
-th{
-    /* border: 1px solid rgb(207, 83, 83); */
-    padding-right: 100px;
+
 }
 
+/* 
 .row{
     border:3px solid rgb(0, 255, 255);
     border: 1px solid black;
     border-radius: 5px;
     
    
-}
+} */
 
-tr.border{
+/* tr.border{
     outline:thin solid black;
-}
+} */
 
 .name-of-cuddle{
     color: white;
@@ -197,27 +206,25 @@ tr.border{
 }
 
 .ask {
-    width: 70%;
+    width: 478%;
     height: 40px;
     position: absolute;
-    left: 18%;
-    top: 0px;
-    border-color:rgb(158, 150, 150);
+    left: 115%;
+    top: 7px;
+    border-color: rgb(158, 150, 150);
+    border-radius: 5px;
 }
-
-#Ask{
+#Ask {
     position: absolute;
-    top: 0px;
-    left: 86%;
+    top: 7px;
+    left: 593%;
     height: 45px;
-
 }
-
 .search {
     position: absolute;
     top: 121px;
-    left: 18%;
-    width: 30%;
+    left: 113%;
+    width: 222%;
     height: 40px;
     border-radius: 10px;
 }
@@ -234,7 +241,7 @@ tr.border{
 
 .add-user {
     position: absolute;
-    left: 85%;
+    left: 569%;
     top: 61px;
     width: 100px;
     height: 40px;
@@ -248,9 +255,8 @@ tr.border{
 h3.user-headings {
     position: absolute;
     top: 51px;
-    left: 20%;
+    left: 116%;
     FONT-SIZE: 21PX;
-
     color: black;
 }
 
@@ -260,15 +266,16 @@ h3.user-headings {
     position: fixed;
 }
 .usertype {
-    top: 5px;
+    top: 16px;
     color: white;
     position: fixed;
     left: 106px;
     background-color: #9264FB;
-    font-size: 16px;
-    padding: 13px;
-    width: 69px;
-    height: 15px;
+    font-size: 13px;
+    padding-top: 4px;
+    padding-left: 9px;
+    width: 66px;
+    height: 22px;
 }
 .auth-drop-down {
     margin-top: 10px;
@@ -285,14 +292,56 @@ h3.user-headings {
 }
 
 h3.admin {
-    position: relative;
+    position: fixed;
     color: white;
-    top: 358px;
-    left: 17px;
-    font-family: roboto;
+    top: 580px;
+    left: 38px;
+    font-family: Roboto;
     font-size: 14px;
 }   
 
 .fa-user{
 padding-right: 10px;
+}
+
+.fa-angle-right{
+    padding-left:25px;
+}
+
+.table-block{
+    display:flex;
+}
+
+.fa-search:before {
+    content: "\f002";
+    position: fixed;
+    left: 53%;
+    top: 23%;
+}
+input.ask::-webkit-input-placeholder {
+    font-size: 19px;
+    color: rgb(126, 116, 116);
+    padding-left: 5px;
+}
+input.search::-webkit-input-placeholder {
+    font-size: 15px;
+    font-family: Roboto;
+    padding-left:5px;
+    outline: 0;
+    color: rgb(155, 146, 146)
+}
+
+h1.user-headings {
+    font-size: 23px;
+    font-family: Roboto;
+    position: fixed;
+    left: 19%;
+    top: 11%;
+}
+
+button#submitbutton {
+    position: fixed;
+    left: 52%;
+    top: 22%;
+    outline: 0;
 }

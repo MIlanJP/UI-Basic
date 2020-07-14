@@ -75,6 +75,214 @@ const list=[
         LastLogin:'2 Days ago',
         Permission:'Valid',
         Others:'...'
+    },    {
+        name:"Christina Woods",
+        email:'ChristinaWoods@company.com',
+        Status:'Active',
+        Role:'User',
+        LastLogin:'2 Days ago',
+        Permission:'Invalid',
+        Others:'...'
+    },
+
+    {
+        name:'Joshea Fox',
+        email:'JoshyaFox@company.com',
+        Status:'Inactive',
+        Role:'Admin',
+        LastLogin:"3 Days ago",
+        Permission:'Valid',
+        Others:'...'
+    },
+
+    {
+        name:'Katherine White',
+        email:'KatherineWhite@company.com',
+        Status:'Active',
+        Role:'Admin',
+        LastLogin:'3 Days ago',
+        Permission:'Invalid',
+        Others:'...'
+    },
+
+
+    {
+        name:'Mary Carlson',
+        email:'MaryCarlson@company.com',
+        Status:'Inactive',
+        Role:'Admin',
+        LastLogin:'1 Day ago',
+        Permission:'Valid',
+        Others:'...'
+    },
+
+    {
+        name:'Nicole  Larson',
+        email:'Nicolelarsonn@company.com',
+        Status:'Active',
+        Role:'User',
+        LastLogin:'1 Day ago',
+        Permission:'Valid',
+        Others:'...'
+    },
+
+    {
+        name:'Raymond Pattersonn',
+        email:'RaymondPatter@company.com',
+        Status:'Inactive',
+        Role:'User',
+        LastLogin:'2 Days ago',
+        Permission:'Valid',
+        Others:'...'
+    },
+
+    {
+        name:'Roger Carpenter',
+        email:'RogerCarpenter@company.com',
+        Status:'Active',
+        Role:'User',
+        LastLogin:'2 Days ago',
+        Permission:'Valid',
+        Others:'...'
+    },
+    {
+        name:"Christina Woods",
+        email:'ChristinaWoods@company.com',
+        Status:'Active',
+        Role:'User',
+        LastLogin:'2 Days ago',
+        Permission:'Invalid',
+        Others:'...'
+    },
+
+    {
+        name:'Joshea Fox',
+        email:'JoshyaFox@company.com',
+        Status:'Inactive',
+        Role:'Admin',
+        LastLogin:"3 Days ago",
+        Permission:'Valid',
+        Others:'...'
+    },
+
+    {
+        name:'Katherine White',
+        email:'KatherineWhite@company.com',
+        Status:'Active',
+        Role:'Admin',
+        LastLogin:'3 Days ago',
+        Permission:'Invalid',
+        Others:'...'
+    },
+
+
+    {
+        name:'Mary Carlson',
+        email:'MaryCarlson@company.com',
+        Status:'Inactive',
+        Role:'Admin',
+        LastLogin:'1 Day ago',
+        Permission:'Valid',
+        Others:'...'
+    },
+
+    {
+        name:'Nicole  Larson',
+        email:'Nicolelarsonn@company.com',
+        Status:'Active',
+        Role:'User',
+        LastLogin:'1 Day ago',
+        Permission:'Valid',
+        Others:'...'
+    },
+
+    {
+        name:'Raymond Pattersonn',
+        email:'RaymondPatter@company.com',
+        Status:'Inactive',
+        Role:'User',
+        LastLogin:'2 Days ago',
+        Permission:'Valid',
+        Others:'...'
+    },
+
+    {
+        name:'Roger Carpenter',
+        email:'RogerCarpenter@company.com',
+        Status:'Active',
+        Role:'User',
+        LastLogin:'2 Days ago',
+        Permission:'Valid',
+        Others:'...'
+    },    {
+        name:"Christina Woods",
+        email:'ChristinaWoods@company.com',
+        Status:'Active',
+        Role:'User',
+        LastLogin:'2 Days ago',
+        Permission:'Invalid',
+        Others:'...'
+    },
+
+    {
+        name:'Joshea Fox',
+        email:'JoshyaFox@company.com',
+        Status:'Inactive',
+        Role:'Admin',
+        LastLogin:"3 Days ago",
+        Permission:'Valid',
+        Others:'...'
+    },
+
+    {
+        name:'Katherine White',
+        email:'KatherineWhite@company.com',
+        Status:'Active',
+        Role:'Admin',
+        LastLogin:'3 Days ago',
+        Permission:'Invalid',
+        Others:'...'
+    },
+
+
+    {
+        name:'Mary Carlson',
+        email:'MaryCarlson@company.com',
+        Status:'Inactive',
+        Role:'Admin',
+        LastLogin:'1 Day ago',
+        Permission:'Valid',
+        Others:'...'
+    },
+
+    {
+        name:'Nicole  Larson',
+        email:'Nicolelarsonn@company.com',
+        Status:'Active',
+        Role:'User',
+        LastLogin:'1 Day ago',
+        Permission:'Valid',
+        Others:'...'
+    },
+
+    {
+        name:'Raymond Pattersonn',
+        email:'RaymondPatter@company.com',
+        Status:'Inactive',
+        Role:'User',
+        LastLogin:'2 Days ago',
+        Permission:'Valid',
+        Others:'...'
+    },
+
+    {
+        name:'Roger Carpenter',
+        email:'RogerCarpenter@company.com',
+        Status:'Active',
+        Role:'User',
+        LastLogin:'2 Days ago',
+        Permission:'Valid',
+        Others:'...'
     }
 ]
 
@@ -82,6 +290,7 @@ const list=[
 
 
 let Tableheader=['Name','Email','Status','Role','Last login','Permission'];
+
 
 const tableForUser=document.createElement('table')
 tableForUser.className='table-for-user';
@@ -140,7 +349,7 @@ list.forEach(user =>{
 
 let userCount=document.querySelector('.user-headings')
 
-userCount.innerText='User('+list.length+')';
+userCount.innerText='Users('+list.length+')';
 console.log(list.length);
 let bodytag=getBodyTag;
 bodytag.appendChild(userCount);
