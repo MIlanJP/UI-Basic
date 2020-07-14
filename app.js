@@ -12,7 +12,8 @@ const list=[
         Status:'Active',
         Role:'User',
         LastLogin:'2 Days ago',
-        Permission:'Invalid'
+        Permission:'Invalid',
+        Others:'...'
     },
 
     {
@@ -21,7 +22,8 @@ const list=[
         Status:'Inactive',
         Role:'Admin',
         LastLogin:"3 Days ago",
-        Permission:'Valid'
+        Permission:'Valid',
+        Others:'...'
     },
 
     {
@@ -30,7 +32,8 @@ const list=[
         Status:'Active',
         Role:'Admin',
         LastLogin:'3 Days ago',
-        Permission:'Invalid'
+        Permission:'Invalid',
+        Others:'...'
     },
 
 
@@ -40,7 +43,8 @@ const list=[
         Status:'Inactive',
         Role:'Admin',
         LastLogin:'1 Day ago',
-        Permission:'Valid'
+        Permission:'Valid',
+        Others:'...'
     },
 
     {
@@ -49,7 +53,8 @@ const list=[
         Status:'Active',
         Role:'User',
         LastLogin:'1 Day ago',
-        Permission:'Valid'
+        Permission:'Valid',
+        Others:'...'
     },
 
     {
@@ -58,7 +63,8 @@ const list=[
         Status:'Inactive',
         Role:'User',
         LastLogin:'2 Days ago',
-        Permission:'Valid'
+        Permission:'Valid',
+        Others:'...'
     },
 
     {
@@ -67,14 +73,15 @@ const list=[
         Status:'Active',
         Role:'User',
         LastLogin:'2 Days ago',
-        Permission:'Valid'
+        Permission:'Valid',
+        Others:'...'
     }
 ]
 
 
 
 
-let Tableheader=['Name','Email','Status','Role','Last login','Permission'];
+let Tableheader=['Name','Email','Status','Role','Last login','Permission','Others'];
 
 const tableForUser=document.createElement('table')
 tableForUser.className='table-for-user';
@@ -130,3 +137,10 @@ list.forEach(user =>{
      } )
      tableForUser.appendChild(row);
 } )
+
+let userCount=document.querySelector('.user-headings')
+
+userCount.innerText='User('+list.length+')';
+console.log(list.length);
+let bodytag=getBodyTag;
+bodytag.appendChild(userCount);
