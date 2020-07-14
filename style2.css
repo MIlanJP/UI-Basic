@@ -52,16 +52,24 @@
     padding-top: px;
     text-decoration: none;
     color: #DADBDF;
+    transition: 1s;
+    -webkit-transition:font-size .5s ease;
 
 }
 
 #vertical-nav-dropdown-auth-display a:hover {
     background-color:rgb(137, 208, 255);
     background-image: linear-gradient(rgb(251, 255, 0),rgb(255, 0, 212));
-    background-clip: content-box;
-    width:110%;
+
+    width:95%;
+    height: 150%;
     padding:10px;
+    margin-left: -10px;
     font-size: 110%;
     color:rgb(3, 3, 3);
     font-family: MV Boli ;
 }
+
+.vertical-nav-auth-dropdown  {
+text-align: left;
+} 
