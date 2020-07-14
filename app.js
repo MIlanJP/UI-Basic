@@ -81,7 +81,7 @@ const list=[
 
 
 
-let Tableheader=['Name','Email','Status','Role','Last login','Permission','Others'];
+let Tableheader=['Name','Email','Status','Role','Last login','Permission'];
 
 const tableForUser=document.createElement('table')
 tableForUser.className='table-for-user';
